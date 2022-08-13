@@ -16,12 +16,6 @@ DOMAIN,d22qjgkvxw22r6.cloudfront.net
 DOMAIN,d1v5ir2lpwr8os.cloudfront.net
 DOMAIN,d27xxe7juh1us6.cloudfront.net
 DOMAIN-KEYWORD,avoddashs
-# BBC iPlayer
-USER-AGENT,BBCiPlayer*
-DOMAIN-SUFFIX,bbc.co.uk
-DOMAIN-SUFFIX,bbci.co.uk
-DOMAIN-KEYWORD,bbcfmt
-DOMAIN-KEYWORD,uk-live
 # HBO NOW & Max
 USER-AGENT,HBO%20NOW*
 DOMAIN-SUFFIX,hbo.com
