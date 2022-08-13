@@ -1,1 +1,1 @@
-# QuantumultXandSurge
+# Surge
