@@ -1,3 +1,14 @@
+# Apple
+HOST-SUFFIX,apple.com
+HOST-SUFFIX,apple.co
+HOST-SUFFIX,cdn-apple.com
+HOST-SUFFIX,lookup-apic.apple.com
+HOST-SUFFIX,aaplimg.com
+HOST-SUFFIX,icloud.com
+HOST-SUFFIX,icloud-content.com
+HOST-SUFFIX,me.com
+HOST-SUFFIX,mzstatic.com
+
 # Apple Media
 DOMAIN-SUFFIX,aod.itunes.apple.com
 DOMAIN-SUFFIX,apple.comscoreresearch.com
