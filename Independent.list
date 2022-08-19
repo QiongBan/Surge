@@ -1,12 +1,5 @@
 # Apple
-DOMAIN-SUFFIX,apple.com
-DOMAIN-SUFFIX,apple.co
-DOMAIN-SUFFIX,cdn-apple.com
-DOMAIN-SUFFIX,lookup-apic.apple.com
-DOMAIN-SUFFIX,aaplimg.com
-DOMAIN-SUFFIX,icloud.com
-DOMAIN-SUFFIX,icloud-content.com
-DOMAIN-SUFFIX,me.com
+DOMAIN-SUFFIX,lookup-api.apple.com
 DOMAIN-SUFFIX,mzstatic.com
 
 # Apple Media
