@@ -1,16 +1,16 @@
 let $ = {
-bilibili:'https://www.bilibili.com',
-baidu:'https://www.baidu.com',
-youtube:'https://www.youtube.com/',
-google:'https://www.google.com/generate_204',
-github:'https://www.github.com'
+𝐁𝐢𝐥𝐢:'https://www.bilibili.com',
+𝐁𝐚𝐢𝐝𝐮:'https://www.baidu.com',
+𝐘𝐨𝐮𝐓𝐮𝐛𝐞:'https://www.youtube.com/',
+𝐆𝐨𝐨𝐠𝐥𝐞:'https://www.google.com/generate_204',
+𝐆𝐢𝐭𝐡𝐮𝐛:'https://www.github.com'
 }
 
 !(async () => {
 await Promise.all([http($.baidu),http($.bilibili),http($. github),http($. google),http($.youtube)]).then((x)=>{
 	$done({
     title: '𝐍𝐞𝐭𝐰𝐨𝐫𝐤 𝐂𝐨𝐧𝐧𝐞𝐜𝐭𝐢𝐯𝐢𝐭𝐲 𝐓𝐞𝐬𝐭',
-    content: x.join('\n'),
+    content: x.join('|'),
     icon: 'timer',
     'icon-color': '#002133',
   })
