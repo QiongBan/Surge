@@ -10,7 +10,7 @@ let $ = {
 await Promise.all([http($.𝐁𝐚𝐢𝐝𝐮),http($.𝐁𝐢𝐥𝐢),http($.𝐆𝐢𝐭𝐡𝐮𝐛),http($.𝐆𝐨𝐨𝐠𝐥𝐞),http($.𝐘𝐨𝐮𝐓𝐮𝐛𝐞)]).then((x)=>{
 	$done({
     title: '𝐍𝐞𝐭𝐰𝐨𝐫𝐤 𝐂𝐨𝐧𝐧𝐞𝐜𝐭𝐢𝐯𝐢𝐭𝐲 𝐓𝐞𝐬𝐭',
-    content: x.join(' | '),
+    content: x.join('\n'),
     icon: 'timer',
     'icon-color': '#002133',
   })
