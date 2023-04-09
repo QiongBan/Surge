@@ -244,7 +244,7 @@ DOMAIN,stun.ringostat.com
 DOMAIN,stun.linphone.org
 DOMAIN,stun.easycall.pl
 DOMAIN,stun.kedr.io
-relay.webwormhole.io
+DOMAIN,relay.webwormhole.io
 DOMAIN,stun.gigaset.net
 DOMAIN,stun.antisip.com
 DOMAIN,stun.myspeciality.com
