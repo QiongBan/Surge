@@ -214,7 +214,7 @@ DOMAIN,stun.voipgain.com
 DOMAIN,stun.sonetel.net
 DOMAIN,stun.vavadating.com
 DOMAIN,stun.splicecom.com
-iphone-DOMAIN,stun.strato-iphone.de
+DOMAIN,iphone-stun.strato-iphone.de
 DOMAIN,stun.baltmannsweiler.de
 DOMAIN,stun.cellmail.com
 DOMAIN,stun.futurasp.es
