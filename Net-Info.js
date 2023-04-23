@@ -22,7 +22,7 @@ $httpClient.get('http://ip-api.com/json/?lang=en', function (error, response, da
       content:
 		`𝐑𝐞𝐠𝐢𝐨𝐧: ${jsonData.country} - ${jsonData.city}\n`+
         `𝐂𝐚𝐫𝐫𝐢𝐞𝐫: ${jsonData.isp}\n` +
-		`𝐃𝐚𝐭𝐚 𝐂𝐞𝐧𝐭𝐞𝐫: ${jsonData.org}` +
+		`𝐃𝐚𝐭𝐚 𝐂𝐞𝐧𝐭𝐞𝐫: ${jsonData.org}\n` +
 		`𝐈𝐏 𝐀𝐝𝐝𝐫.: ${jsonData.query}`,
       icon: params.icon,
 		  "icon-color":params.color
