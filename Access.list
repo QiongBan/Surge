@@ -1,5 +1,6 @@
 # OpenAI
 DOMAIN,cdn.auth0.com
+DOMAIN,chatgpt.com
 DOMAIN,challenges.cloudflare.com
 DOMAIN,openaiapi-site.azureedge.net
 DOMAIN-SUFFIX,ai.com
