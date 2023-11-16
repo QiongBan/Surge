@@ -5,6 +5,8 @@ DOMAIN,openaiapi-site.azureedge.net
 DOMAIN-SUFFIX,ai.com
 DOMAIN-SUFFIX,identrust.com
 DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,oaiusercontent.com
 
 # Bing
 DOMAIN-SUFFIX,bing.com
