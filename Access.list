@@ -47,4 +47,4 @@ DOMAIN-SUFFIX,renovacionoffice.com
 DOMAIN-SUFFIX,sprinklesapp.com
 
 # General Verification
-URL-REGEX,^https?:\/\/.*\/cdn-cgi\/challenge-platform\/.*$
+//URL-REGEX,^https?:\/\/.*\/cdn-cgi\/challenge-platform\/.*$
