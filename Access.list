@@ -1,3 +1,8 @@
+# Claude
+DOMAIN,cdn.usefathom.com
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,claude.ai
+
 # OpenAI
 DOMAIN,ai.cn
 DOMAIN,openaiapi-site.azureedge.net
