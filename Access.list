@@ -8,7 +8,6 @@ DOMAIN,ai.cn
 DOMAIN,openaiapi-site.azureedge.net
 DOMAIN-SUFFIX,ai.com
 DOMAIN-SUFFIX,auth0.com
-DOMAIN-SUFFIX,challenges.cloudflare.com
 DOMAIN-SUFFIX,client-api.arkoselabs.com
 DOMAIN-SUFFIX,events.statsigapi.net
 DOMAIN-SUFFIX,featuregates.org
@@ -55,4 +54,5 @@ DOMAIN-SUFFIX,sprinklesapp.com
 DOMAIN-SUFFIX,perplexity.ai
 
 # General Verification
-//URL-REGEX,^https?:\/\/.*\/cdn-cgi\/challenge-platform\/.*$
+DOMAIN-SUFFIX,challenges.cloudflare.com
+DOMAIN-SUFFIX,hcaptcha.com
