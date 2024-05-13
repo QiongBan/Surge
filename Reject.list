@@ -2,6 +2,7 @@ DOMAIN,cm.bilibili.com
 DOMAIN,data.bilibili.com
 DOMAIN,dns.google
 DOMAIN,metrics.icloud.com
+DOMAIN-SUFFIX,iads.unity3d.com
 DOMAIN,app-analytics-services.com
 DOMAIN,w3-reporting-nel.reddit.com
 DOMAIN-SUFFIX,o-sdk.mediation.unity3d.com
