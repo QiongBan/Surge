@@ -1,5 +1,5 @@
 DOMAIN,data.bilibili.com
-
+DOMAIN,metrics.icloud.com
 DOMAIN-KEYWORD,112wan
 DOMAIN-KEYWORD,789htbet
 DOMAIN-KEYWORD,adform
@@ -72,8 +72,6 @@ DOMAIN-KEYWORD,openx
 DOMAIN-KEYWORD,partnerad
 DOMAIN-KEYWORD,pingfore
 DOMAIN-KEYWORD,socdm
-DOMAIN-KEYWORD,stsdk.vivo.com.cn
-DOMAIN-KEYWORD,stsdk.vivoglobal.com
 DOMAIN-KEYWORD,supersonicads
 DOMAIN-KEYWORD,wlmonitor
 DOMAIN-KEYWORD,zjtoolbar
