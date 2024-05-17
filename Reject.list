@@ -518,6 +518,5 @@ IP-CIDR,78.140.131.214/32,no-resolve
 AND,((USER-AGENT,Frodo*),(DOMAIN,119.29.29.29))
 # Custom
 ## Taobao Ads
-IP-CIDR,59.82.113.219/32,no-resolve
-## BiliBili
+IP-CIDR,59.82.113.219/32,no-resolve //tao
 AND,((USER-AGENT,bili*), (NOT,((OR,((DOMAIN-SUFFIX,bilibili.com), (DOMAIN-SUFFIX,hdslb.com), (DOMAIN-SUFFIX,wo.cn), (DOMAIN-SUFFIX,biligame.com), (DOMAIN-SUFFIX,bilivideo.com), (DOMAIN-SUFFIX,biliapi.com), (DOMAIN-SUFFIX,biliapi.net), (DOMAIN-SUFFIX,biliintl.com), (DOMAIN-SUFFIX,bstarstatic.com), (DOMAIN-SUFFIX,akamaized.net))))))
