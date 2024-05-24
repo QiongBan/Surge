@@ -520,3 +520,4 @@ AND,((USER-AGENT,Frodo*),(DOMAIN,119.29.29.29))
 DOMAIN,dldir1.qq.com // Wechat
 IP-CIDR,59.82.113.219/32,no-resolve // Taobao Ads
 AND,((USER-AGENT,bili*), (NOT,((OR,((DOMAIN-SUFFIX,bilibili.com), (DOMAIN-SUFFIX,hdslb.com), (DOMAIN-SUFFIX,wo.cn), (DOMAIN-SUFFIX,biligame.com), (DOMAIN-SUFFIX,bilivideo.com), (DOMAIN-SUFFIX,biliapi.com), (DOMAIN-SUFFIX,biliapi.net), (DOMAIN-SUFFIX,biliintl.com), (DOMAIN-SUFFIX,bstarstatic.com), (DOMAIN-SUFFIX,akamaized.net)))))) // BiliBili
+DOMAIN-KEYWORD,adsdk
