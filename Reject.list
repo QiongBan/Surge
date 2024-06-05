@@ -517,6 +517,7 @@ IP-CIDR,77.162.125.199/32,no-resolve
 IP-CIDR,78.140.131.214/32,no-resolve
 AND,((USER-AGENT,Frodo*),(DOMAIN,119.29.29.29))
 # Custom
+AND,((NOT,((DOMAIN-KEYWORD,ucsd))), (DOMAIN-SUFFIX,qualtrics.com)),DIRECT // Survey
 DOMAIN,dldir1.qq.com // Wechat
 IP-CIDR,59.82.113.219/32,no-resolve // Taobao Ads
 AND,((USER-AGENT,bili*), (NOT,((OR,((DOMAIN-SUFFIX,bilibili.com), (DOMAIN-SUFFIX,hdslb.com), (DOMAIN-SUFFIX,wo.cn), (DOMAIN-SUFFIX,biligame.com), (DOMAIN-SUFFIX,bilivideo.com), (DOMAIN-SUFFIX,biliapi.com), (DOMAIN-SUFFIX,biliapi.net), (DOMAIN-SUFFIX,biliintl.com), (DOMAIN-SUFFIX,bstarstatic.com), (DOMAIN-SUFFIX,akamaized.net)))))) // BiliBili
