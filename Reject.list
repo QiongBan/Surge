@@ -522,7 +522,7 @@ DOMAIN,maplocatesdksnapshot.d.meituan.net
 DOMAIN,al-log.d.meituan.net
 DOMAIN,babel-statistics-android.d.meituan.net
 DOMAIN,route-stats.d.meituan.net // Meituan
-// AND,((NOT,((DOMAIN-KEYWORD,ucsd))), (DOMAIN-SUFFIX,qualtrics.com)),DIRECT // Survey
+AND,((NOT,((DOMAIN-KEYWORD,ucsd))), (DOMAIN-SUFFIX,qualtrics.com)),DIRECT // Survey
 DOMAIN-SUFFIX,-tracker.biliapi.net
 DOMAIN,telemetry.officeapps.live.com
 DOMAIN,dldir1.qq.com // Wechat
