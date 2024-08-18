@@ -54,5 +54,4 @@ DOMAIN-SUFFIX,sprinklesapp.com
 DOMAIN-SUFFIX,perplexity.ai
 
 # General Verification
-DOMAIN-SUFFIX,challenges.cloudflare.com
 DOMAIN-SUFFIX,hcaptcha.com
