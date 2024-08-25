@@ -39,3 +39,6 @@ DOMAIN-SUFFIX,sxg.btjson.us.kg
 DOMAIN-SUFFIX,litvpc-hichannel.cdn.hinet.net
 USER-AGENT,encoreTVB*
 USER-AGENT,mytv*
+
+# Stream-Link
+DOMAIN-KEYWORD,stream-link
