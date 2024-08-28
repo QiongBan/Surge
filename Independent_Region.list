@@ -1,6 +1,5 @@
 # Apple
-DOMAIN-SUFFIX,lookup-api.apple.com
-DOMAIN-SUFFIX,mzstatic.com
+DOMAIN,gateway.icloud.com
 
 # Apple Media
 DOMAIN-SUFFIX,aod.itunes.apple.com
@@ -82,15 +81,8 @@ USER-AGENT,com.apple.tv*
 PROCESS-NAME,tv
 
 # Apple News
-DOMAIN,apple.comscoreresearch.com
-DOMAIN,gateway.icloud.com
-DOMAIN,gspe1-ssl.ls.apple.com
-DOMAIN,news-assets.apple.com
-DOMAIN,news-client-search.apple.com
-DOMAIN,news-client.apple.com
 DOMAIN,news-edge.apple.com
 DOMAIN,news-events.apple.com
-DOMAIN-SUFFIX,apple.news
-USER-AGENT,AppleNews*
-USER-AGENT,com.apple.news*
-PROCESS-NAME,news
+DOMAIN,apple.comscoreresearch.com
+# News+ Audio
+URL-REGEX,^https?:\/\/news-assets\.apple\.com\/(audio-narrative|podcast\/audio)\/.*
