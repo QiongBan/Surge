@@ -1,5 +1,7 @@
 # Apple
 DOMAIN,gateway.icloud.com
+DOMAIN-SUFFIX,ocsp.apple.com
+USER-AGENT,com.apple.trustd*
 
 # Apple Media
 DOMAIN-SUFFIX,aod.itunes.apple.com
