@@ -518,6 +518,7 @@ IP-CIDR,78.140.131.214/32,no-resolve
 AND,((USER-AGENT,Frodo*),(DOMAIN,119.29.29.29))
 # Custom
 DOMAIN,https
+DOMAIN,api.segment.io,𝐑𝐞𝐣𝐞𝐜𝐭-𝐃𝐫𝐨𝐩
 DOMAIN,metrics-picture.d.meituan.net
 DOMAIN,maplocatesdksnapshot.d.meituan.net
 DOMAIN,al-log.d.meituan.net
