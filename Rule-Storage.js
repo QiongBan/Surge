@@ -1,27 +1,11 @@
-/*
-Surge规则自动生成脚本
-更新时间：2024/08/11
-
-需按照博客内教程配合使用：
-https://nobyda.github.io/2024/02/24/Surge_Rule_Storage
-
-*/
-
 const args = argsList(typeof $argument == "string" && $argument || 'region=debug');
-/*
-When matching whitelist rules, skip generating suffix domain. Three ways to write:
-Domain: example.com
-Domain suffix: .example.com
-Domain keyword: .example.
-*/
 args.whitelist = args.whitelist || `[".mwcname.com", ".akadns.", ".akamai.", ".cloud.", ".cdn.", ".yun."]`;
 args.key = args.key || 'Rule-Storage';
 
 (async () => {
     const host = $request.hostname.toLowerCase();
-    const inHost = $request.listenPort == 6152 && !$request.sourcePort && !$request.processPath && /^[a-z0-9]{10}\.[a-z]+$/.test(host); //Prevent benchmark
+    const inHost = $request.listenPort == 6152 && !$request.sourcePort && !$request.processPath && /^[a-z0-9]{10}\.[a-z]+$/.test(host);
     if (['127.0.0.1', '0.0.0.0'].filter((v) => [...($request.dnsResult || {}).v4Addresses || []].includes(v)).length) {
-        // DNS poisoning
         args.matched = false;
         args.region = 'global';
     }
@@ -31,14 +15,7 @@ args.key = args.key || 'Rule-Storage';
         if (!evalRules(host, saved_rules)) {
             data[args.region] = saveDecision(host, data[args.region]);
             if (data[args.region][host].quantity >= (args.quantity || 10)) {
-                const eTLDs = await eTLD(data.eTLD || JSON.parse($persistentStore.read(`${args.key}-eTLD`) || '{}'));
-                if (data.eTLD) { // legacy
-                    $persistentStore.write(JSON.stringify(data.eTLD), `${args.key}-eTLD`);
-                    delete data.eTLD;
-                }
-                const suffix = shortenDomain(host, eTLDs.public_suffix);
-                const domain = evalRules(host, JSON.parse(args.whitelist)) ? host : suffix;
-                const text = [...formatRules(saved_rules), ...formatRules(domain)].join('\n');
+                const text = [...formatRules(saved_rules), ...formatRules(host)].join('\n');
                 delete data[args.region][host];
                 $persistentStore.write(text, `${args.key}-${args.region}`)
             }
@@ -57,7 +34,7 @@ function saveDecision(host_name, content = {}) {
         }
         count.push(content[i].update_time);
     }
-    if (count.length > (args.cacheNumber || 1000)) { // limit amount to prevent NE memory issues.
+    if (count.length > (args.cacheNumber || 1000)) {
         const spill = count.sort((x, y) => x - y).slice(0, count.length - (args.cacheNumber || 1000));
         for (const is of spill) {
             for (const ic in content) {
@@ -107,34 +84,6 @@ function formatRules(list, type) {
         if (v.includes('.')) { return type ? v : `DOMAIN,${v}` }
     }).filter((v) => v);
 }
-
-async function eTLD(content = {}) {
-    if (!content.update_time || (Date.now() - content.update_time > 86400000 * 30)) {
-        await new Promise(resolve => {
-            $httpClient.get({
-                url: 'https://publicsuffix.org/list/public_suffix_list.dat'
-            }, (error, resp, body) => {
-                if (resp.status == 200 && !error && body) {
-                    content.update_time = Date.now();
-                    content.public_suffix = body.replace(/\r|.*(\/\/|#|;).*|\n(\!|\*\.)/g, '\n').split('\n').filter((t) => t);
-                    $persistentStore.write(JSON.stringify(content), `${args.key}-eTLD`);
-                    resolve()
-                } else if (content.update_time) {
-                    console.log(`Update eTLD list failed: ${error}`);
-                    resolve()
-                } else {
-                    throw new Error(`Download eTLD list failed: ${error}`)
-                }
-            })
-        })
-    }
-    return content
-}
-
-/*
-Shorten multi level domain: non-eTLD, full eTLD, second level domain will return original
-Basic logic: www.abc.com -> .abc.com
-*/
 
 function argsList(data) {
     return Array.from(
