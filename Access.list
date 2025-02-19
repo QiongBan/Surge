@@ -33,7 +33,7 @@ DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,openaiapi-site.azureedge.net
 DOMAIN-SUFFIX,openaicom.imgix.net
 # DOMAIN-SUFFIX,segment.io
-DOMAIN-SUFFIX,sentry.io
+# DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,turn.livekit.cloud
 DOMAIN-KEYWORD,openai
 IP-CIDR,24.199.123.28/32,no-resolve
@@ -45,6 +45,7 @@ DOMAIN-SUFFIX,perplexity.ai
 
 # General Verification
 DOMAIN-SUFFIX,hcaptcha.com
+DOMAIN,challenges.cloudflare.com
 
 # Reddit
 DOMAIN-SUFFIX,redd.it

@@ -1,6 +1,0 @@
-# Apple
-DOMAIN,gateway.icloud.com
-USER-AGENT,com.apple.trustd*
-
-# Apple News+ Audio
-URL-REGEX,^https?:\/\/news-assets\.apple\.com\/(audio-narrative|podcast\/audio)\/.*
